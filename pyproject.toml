@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flapping-wing-mechanism-preview"
+version = "0.1.0"
+description = "Public mechanical simulation preview with illustrative dynamics"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = ["mujoco==3.2.7", "numpy==2.2.6"]
+
+[tool.setuptools.packages.find]
+include = ["flapping_sim*"]
+
+[tool.setuptools.package-data]
+flapping_sim = ["assets/*.xml", "assets/*.md", "assets/meshes/*.stl"]

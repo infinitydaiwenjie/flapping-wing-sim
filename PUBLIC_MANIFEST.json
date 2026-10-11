@@ -1,0 +1,195 @@
+{
+  "scope": "Mechanical simulation preview; no research experiment artifacts",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 32,
+      "sha256": "4358a484ee5d2e99d87e6081c4dd24cf885d74a742bbab13e36750b91862e346"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1392,
+      "sha256": "220a972e3ab291336389286ead9e0db21d6b4b765d5b78393364f23921f3be97"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3109,
+      "sha256": "ebd093de56dd09d39d06f9ad8627da18a4a8cee472ecf207e9ff77d79f266b7c"
+    },
+    {
+      "path": "README_zh.md",
+      "bytes": 2047,
+      "sha256": "76647e1e66741d1fd4cb5d7067aefa6c3098e5f0238237353e1ae523b56abbae"
+    },
+    {
+      "path": "docs/environment.md",
+      "bytes": 2536,
+      "sha256": "ac3561c573ba9ebcb35194c522598a30c0ac7e9da4e6f737021346ed7fd90fef"
+    },
+    {
+      "path": "docs/method_outline.md",
+      "bytes": 2257,
+      "sha256": "f199a2d83c9c04bc1658d6ffc1cb7a1d90cc4ba61a254227147c145de3d07d82"
+    },
+    {
+      "path": "docs/method_outline_zh.md",
+      "bytes": 1842,
+      "sha256": "dffd45da57ca772ce838a37b984457198b7559a4d16765ef2fa6d1e4a8c7f6be"
+    },
+    {
+      "path": "docs/release_scope.md",
+      "bytes": 1771,
+      "sha256": "9fa77d51cda9694f3281511e04c02580cdb9404454862c6560783bcbdeeaaaca"
+    },
+    {
+      "path": "flapping_sim/__init__.py",
+      "bytes": 165,
+      "sha256": "e7b2b000c7a5762a23d1f43c10865b16475ffa86ea131e96d93ffb7a1cf44805"
+    },
+    {
+      "path": "flapping_sim/assets/README.md",
+      "bytes": 1658,
+      "sha256": "beb7f69406986dcb2ea5d7738190a6c02b3b061bd46516bb3246f81a5da49aa8"
+    },
+    {
+      "path": "flapping_sim/assets/mechanism.xml",
+      "bytes": 10088,
+      "sha256": "4b05c1c3703e25ffc4c9c4c6e213d6c3b58180d767f02858d6c5721f0745efd6"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/LBC_L_lower.stl",
+      "bytes": 4284,
+      "sha256": "8bbaea8b50d8b0db2cb28d90c5f14226907e68b396c48b40d2a91a2ae448aed4"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/LBC_L_upper.stl",
+      "bytes": 4284,
+      "sha256": "dd51a3e3194e4b23def790c7edca877a296ff8e5521b45c84d7d39bc87c443fd"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/LBC_R_lower.stl",
+      "bytes": 4284,
+      "sha256": "163d833d3b9a58ee1171689918977ae13302241a44232663e8d369aebbbc70a3"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/LBC_R_upper.stl",
+      "bytes": 4284,
+      "sha256": "6526503b871312636d023bff4882e0c559d24a2c1d3bb807cf6343890f7d53c3"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/base_link.stl",
+      "bytes": 12784,
+      "sha256": "e4bba1e037360e81ef750d4870072a5895b9b9145567a7c00b323ed111b3dea6"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/foil_L_lower.stl",
+      "bytes": 4484,
+      "sha256": "78f117b7f17b0a3cc81f28c85963dcd303075b88691977517ebe4f31bc674872"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/foil_L_upper.stl",
+      "bytes": 4484,
+      "sha256": "09f068f402f40878bbc6eef313cf98e83a92eb9d3a5df3686a088655c5fb4a7f"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/foil_R_lower.stl",
+      "bytes": 4484,
+      "sha256": "b8b2032b8e680a4c37c53275b1bc23dc6a6758940f07af2153a8d7dd8be47b35"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/foil_R_upper.stl",
+      "bytes": 4484,
+      "sha256": "a83b45f2c55eb6ca31a9562bdc8c36e6ad572eeb3a90d8334a9474fe70aa282e"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/gear3_L_lower.stl",
+      "bytes": 12584,
+      "sha256": "b44e2e7db416f6d5ee58a50cf46758de189331603636d837492b55ce070b699c"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/gear3_L_upper.stl",
+      "bytes": 12584,
+      "sha256": "0bbae154fabf0ab6ddf20f615b59c190b722e5d456562874fd2984fcaec0cd83"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/gear3_R_lower.stl",
+      "bytes": 12584,
+      "sha256": "6369b445f81ce571f58e6fb3ce8b2cf064d02263f0426884c3d85c6335bfcaf2"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/gear3_R_upper.stl",
+      "bytes": 12584,
+      "sha256": "959f2b8aa1e1d134c12982dc0257bda5ec6102d035e11590e761affebce0b084"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/rod_L_lower.stl",
+      "bytes": 18184,
+      "sha256": "8485469c052276d49a02b8e4c4b03c8e492929b94f8eddd935b40aa7441253a9"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/rod_L_upper.stl",
+      "bytes": 18184,
+      "sha256": "259597e9ec064d3d0a3547540dd8e8f33b0d255d9a146e998db9a82e90e24b01"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/rod_R_lower.stl",
+      "bytes": 18184,
+      "sha256": "0209df63c7fdbfc90aa6cd0ab97f3a8e216f29d128ab130a6c938e59bb1f44da"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/rod_R_upper.stl",
+      "bytes": 18184,
+      "sha256": "9243b52989af8c618cc239fa47efa1776c1e9ba1d95e7c99b40f021a2550dcb1"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/wingbase_L.stl",
+      "bytes": 24584,
+      "sha256": "a5b5aa81a6e8b1b948c104b833b380eae5163f7341b7e675c65a5c844e6c812a"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/wingbase_R.stl",
+      "bytes": 24584,
+      "sha256": "d8a9c1a6a3a8b8fcaafe1f15b08b16620a753d76d99914281faa5a3a83f01373"
+    },
+    {
+      "path": "flapping_sim/assets/meshes/wingroot.stl",
+      "bytes": 684,
+      "sha256": "c7eefc1beb2e566d86973705686ed4f2ba44020fdf746806bff2f0b1c4e71987"
+    },
+    {
+      "path": "flapping_sim/demo.py",
+      "bytes": 1967,
+      "sha256": "3dff12c1df215e22ae3fbf7114059eb0389d11c2a6ff085aa25c5488edeca6ad"
+    },
+    {
+      "path": "flapping_sim/environment.py",
+      "bytes": 3185,
+      "sha256": "59792c3710cc87bc58a07dd090506e794e68134f24abc1e4bd6263e7854bfe6a"
+    },
+    {
+      "path": "flapping_sim/physics.py",
+      "bytes": 6591,
+      "sha256": "38d472ef68e12eceed2a2a868431dc70fd50dbf7d826a561990083a9c6663232"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 510,
+      "sha256": "77896dd0ef802fba716690d3346b063d2ce7b682cddd7dd56cac6ab5ad7eb60f"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 103,
+      "sha256": "df1c790e0597715de723eb7f9dd5ee4feb46fbf416db3ccef782cf87df5e50e4"
+    },
+    {
+      "path": "tests/test_preview.py",
+      "bytes": 3737,
+      "sha256": "358e5a3e3c0f3eadb62f52b61cef22be4c6a49f1f141cbdd14ab8eea2826a132"
+    },
+    {
+      "path": "tools/check_release.py",
+      "bytes": 2295,
+      "sha256": "381c3e9afd1e2bb0d9de23433f0ec285f09ab99c3f6b3ef1babea6ecee79a212"
+    }
+  ]
+}

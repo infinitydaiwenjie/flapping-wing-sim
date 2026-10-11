@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="flapping_mechanism_preview">
+  <compiler angle="radian" meshdir="meshes" />
+  <option timestep="0.001" integrator="implicitfast" gravity="0 0 0" />
+  <default>
+    <joint damping="0.002" armature="0.00002" />
+    <geom contype="0" conaffinity="0" rgba="0.65 0.72 0.8 1" />
+    <site size="0.001" rgba="0 0 0 0" group="3" />
+  </default>
+  <asset>
+    <mesh name="base_link" file="base_link.stl" />
+    <mesh name="wingroot" file="wingroot.stl" />
+    <mesh name="wingbase_L" file="wingbase_L.stl" />
+    <mesh name="gear3_L_lower" file="gear3_L_lower.stl" />
+    <mesh name="LBC_L_lower" file="LBC_L_lower.stl" />
+    <mesh name="rod_L_lower" file="rod_L_lower.stl" />
+    <mesh name="foil_L_lower" file="foil_L_lower.stl" />
+    <mesh name="gear3_L_upper" file="gear3_L_upper.stl" />
+    <mesh name="LBC_L_upper" file="LBC_L_upper.stl" />
+    <mesh name="rod_L_upper" file="rod_L_upper.stl" />
+    <mesh name="foil_L_upper" file="foil_L_upper.stl" />
+    <mesh name="wingbase_R" file="wingbase_R.stl" />
+    <mesh name="gear3_R_lower" file="gear3_R_lower.stl" />
+    <mesh name="LBC_R_lower" file="LBC_R_lower.stl" />
+    <mesh name="rod_R_lower" file="rod_R_lower.stl" />
+    <mesh name="foil_R_lower" file="foil_R_lower.stl" />
+    <mesh name="gear3_R_upper" file="gear3_R_upper.stl" />
+    <mesh name="LBC_R_upper" file="LBC_R_upper.stl" />
+    <mesh name="rod_R_upper" file="rod_R_upper.stl" />
+    <mesh name="foil_R_upper" file="foil_R_upper.stl" />
+  </asset>
+  <worldbody>
+    <body name="torso" pos="0 0 0.1" euler="0 -1.570796326794896619 0">
+      <geom type="mesh" mesh="base_link" />
+      <body name="wingroot" pos="-0.1494 0 0.0075" quat="0.5 -0.5 0.5 -0.5">
+        <joint name="J_wingroot" pos="0 0 0" axis="0 0 1" />
+        <geom type="mesh" mesh="wingroot" />
+        <site name="S_wingroot_L_lower" type="box" pos="0.0385256 -0.0029359 0" quat="0.49828 0 0 -0.867016" />
+        <site name="S_wingroot_L_upper" type="box" pos="0.0385256 0.0029359 0" quat="0.867016 0 0 -0.49828" />
+        <site name="S_wingroot_R_lower" type="box" pos="-0.0385256 -0.0029359 0" quat="0.867016 0 0 -0.49828" />
+        <site name="S_wingroot_R_upper" type="box" pos="-0.0385256 0.0029359 0" quat="0.49828 0 0 -0.867016" />
+        <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+      </body>
+      <body name="wingbase_L" pos="-0.056 -0.006 0.0075" quat="0.5 -0.5 0.5 -0.5">
+        <joint name="J_wingbase_L" pos="0 0 0" axis="0 0 -1" />
+        <geom type="mesh" mesh="wingbase_L" />
+        <body name="gear3_L_lower" pos="0.0133 -0.01 0.01006" quat="0.729537 0 0 -0.683941">
+          <joint name="J_gear3_L_lower" pos="0 0 0" axis="0 0 -1" />
+          <geom type="mesh" mesh="gear3_L_lower" />
+          <body name="LBC_L_lower" pos="0.0043 0 0.0021" quat="0.674088 0 0 0.738651">
+            <joint name="J_LBC_L_lower" pos="0 0 0" axis="0 0 1" />
+            <geom type="mesh" mesh="LBC_L_lower" />
+            <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+          </body>
+          <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+        </body>
+        <body name="rod_L_lower" pos="0.0317 0 0.01216" quat="0.729963 0 0 -0.683486">
+          <joint name="J_rod_L_lower" pos="0 0 0" axis="0 0 1" />
+          <geom type="mesh" mesh="rod_L_lower" />
+          <body name="foil_L_lower" pos="0.0125911 0.0148775 -0.00175" quat="0.206703 0.67622 -0.206703 0.67622">
+            <joint name="J_foil_L_lower" pos="0 0 0" axis="0 -1 0" />
+            <geom type="mesh" mesh="foil_L_lower" />
+            <site name="S_ball_L_lower" type="box" pos="-0.10381 0.0171832 0" quat="0.707107 0 -0.707107 0" />
+            <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+          </body>
+          <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+        </body>
+        <body name="gear3_L_upper" pos="0.0133 0.01 0.01006" quat="0.729537 0 0 0.683941">
+          <joint name="J_gear3_L_upper" pos="0 0 0" axis="0 0 -1" />
+          <geom type="mesh" mesh="gear3_L_upper" />
+          <body name="LBC_L_upper" pos="0.0043 0 0.0021" quat="0.674088 0 0 -0.738651">
+            <joint name="J_LBC_L_upper" pos="0 0 0" axis="0 0 -1" />
+            <geom type="mesh" mesh="LBC_L_upper" />
+            <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+          </body>
+          <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+        </body>
+        <body name="rod_L_upper" pos="0.0317 0 0.01216" quat="0.729963 0 0 0.683486">
+          <joint name="J_rod_L_upper" pos="0 0 0" axis="0 0 1" />
+          <geom type="mesh" mesh="rod_L_upper" />
+          <body name="foil_L_upper" pos="0.0125911 -0.0148775 -0.00175" quat="0.67622 0.206703 -0.67622 0.206703">
+            <joint name="J_foil_L_upper" pos="0 0 0" axis="0 -1 0" />
+            <geom type="mesh" mesh="foil_L_upper" />
+            <site name="S_ball_L_upper" type="box" pos="-0.10381 0.0171832 0" quat="0.707107 0 -0.707107 0" />
+            <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+          </body>
+          <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+        </body>
+        <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+      </body>
+      <body name="wingbase_R" pos="-0.056 0.006 0.0075" quat="0.5 -0.5 0.5 -0.5">
+        <joint name="J_wingbase_R" pos="0 0 0" axis="0 0 -1" />
+        <geom type="mesh" mesh="wingbase_R" />
+        <body name="gear3_R_lower" pos="-0.0133 -0.01 0.01006" quat="0.683941 0 0 -0.729537">
+          <joint name="J_gear3_R_lower" pos="0 0 0" axis="0 0 -1" />
+          <geom type="mesh" mesh="gear3_R_lower" />
+          <body name="LBC_R_lower" pos="0.0043 0 0.0021" quat="0.738651 0 0 0.674088">
+            <joint name="J_LBC_R_lower" pos="0 0 0" axis="0 0 -1" />
+            <geom type="mesh" mesh="LBC_R_lower" />
+            <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+          </body>
+          <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+        </body>
+        <body name="rod_R_lower" pos="-0.0317 0 0.01216" quat="0.683486 0 0 -0.729963">
+          <joint name="J_rod_R_lower" pos="0 0 0" axis="0 0 -1" />
+          <geom type="mesh" mesh="rod_R_lower" />
+          <body name="foil_R_lower" pos="0.0125911 -0.0148775 -0.00175" quat="0.206703 -0.67622 -0.206703 -0.67622">
+            <joint name="J_foil_R_lower" pos="0 0 0" axis="0 -1 0" />
+            <geom type="mesh" mesh="foil_R_lower" />
+            <site name="S_ball_R_lower" type="box" pos="-0.10381 -0.0171832 0" quat="0.707107 0 -0.707107 0" />
+            <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+          </body>
+          <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+        </body>
+        <body name="gear3_R_upper" pos="-0.0133 0.01 0.01006" quat="0.683941 0 0 0.729537">
+          <joint name="J_gear3_R_upper" pos="0 0 0" axis="0 0 -1" />
+          <geom type="mesh" mesh="gear3_R_upper" />
+          <body name="LBC_R_upper" pos="0.0043 0 0.0021" quat="0.738651 0 0 -0.674088">
+            <joint name="J_LBC_R_upper" pos="0 0 0" axis="0 0 -1" />
+            <geom type="mesh" mesh="LBC_R_upper" />
+            <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+          </body>
+          <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+        </body>
+        <body name="rod_R_upper" pos="-0.0317 0 0.01216" quat="0.683486 0 0 0.729963">
+          <joint name="J_rod_R_upper" pos="0 0 0" axis="0 0 -1" />
+          <geom type="mesh" mesh="rod_R_upper" />
+          <body name="foil_R_upper" pos="0.0125911 0.0148775 -0.00175" quat="0.67622 -0.206703 -0.67622 -0.206703">
+            <joint name="J_foil_R_upper" pos="0 0 0" axis="0 -1 0" />
+            <geom type="mesh" mesh="foil_R_upper" />
+            <site name="S_ball_R_upper" type="box" pos="-0.10381 -0.0171832 0" quat="0.707107 0 -0.707107 0" />
+            <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+          </body>
+          <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+        </body>
+        <inertial pos="0 0 0" mass="0.01" diaginertia="0.0001 0.0001 0.0001" />
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <joint name="C_Dihedral" joint1="J_wingbase_L" joint2="J_wingbase_R" polycoef="0 -1 0 0 0" />
+    <joint name="C_gear3_L" joint1="J_gear3_L_upper" joint2="J_gear3_L_lower" polycoef="0 -1 0 0 0" />
+    <connect name="C_fourbar_L_upper" body1="LBC_L_upper" body2="rod_L_upper" anchor="0.0191 0 0" />
+    <connect name="C_fourbar_L_lower" body1="LBC_L_lower" body2="rod_L_lower" anchor="0.0191 0 0" />
+    <connect name="C_wingroot_L_lower" site1="S_wingroot_L_lower" site2="S_ball_L_lower" />
+    <connect name="C_wingroot_L_upper" site1="S_wingroot_L_upper" site2="S_ball_L_upper" />
+    <connect name="C_wingroot_R_lower" site1="S_wingroot_R_lower" site2="S_ball_R_lower" />
+    <connect name="C_wingroot_R_upper" site1="S_wingroot_R_upper" site2="S_ball_R_upper" />
+    <joint name="C_gear3_R" joint1="J_gear3_R_upper" joint2="J_gear3_R_lower" polycoef="0 -1 0 0 0" />
+    <connect name="C_fourbar_R_upper" body1="LBC_R_upper" body2="rod_R_upper" anchor="-0.0191 0 0" />
+    <connect name="C_fourbar_R_lower" body1="LBC_R_lower" body2="rod_R_lower" anchor="-0.0191 0 0" />
+    <weld name="mount_wingroot" body1="wingroot" body2="torso" />
+    <joint name="mount_dihedral" joint1="J_wingbase_L" polycoef="0 0 0 0 0" />
+  </equality>
+  <actuator>
+    <velocity name="drive_left" joint="J_gear3_L_lower" gear="1" kv="0.02" ctrllimited="true" ctrlrange="-12 12" forcelimited="true" forcerange="-0.05 0.05" />
+    <velocity name="drive_right" joint="J_gear3_R_lower" gear="-1" kv="0.02" ctrllimited="true" ctrlrange="-12 12" forcelimited="true" forcerange="-0.05 0.05" />
+  </actuator>
+</mujoco>
